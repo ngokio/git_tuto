@@ -10,6 +10,6 @@ DROP TABLE IF EXISTS Courses CASCADE;
 CREATE TABLE Courses (
     course_id SERIAL PRIMARY KEY,
     teacher_id INTEGER,
-    course_name VARCHAR(50),
+    course_name VARCHAR(60),
     FOREIGN KEY (teacher_id) REFERENCES Teachers (teacher_id)
 );
